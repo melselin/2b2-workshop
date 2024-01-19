@@ -6,6 +6,7 @@ import { Route, Routes} from "react-router-dom";
 import CarDetail from "../pages/CarDetail";
 import CartDetail from "../pages/CartDetail";
 import { ToastContainer } from "react-toastify";
+import CarAdd from "../pages/CarAdd";
 
 export default function Dashboard() {
   return (
@@ -21,6 +22,7 @@ export default function Dashboard() {
             <Routes><Route exact path="/cars" Component={CarList}/></Routes>
             <Routes><Route path="/cars/:id" Component={CarDetail}/></Routes>
             <Routes><Route path="/cart" Component={CartDetail}/></Routes>
+            <Routes><Route path="/car/add" Component={CarAdd}/></Routes>
           </Grid.Column>
         </Grid.Row>
       </Grid>
